@@ -2,6 +2,9 @@
   "name": "shop-app",
   "version": "1.0.0",
   "description": "An e-commerce application developed with MongoDB, ExpressJS, React, and NodeJS",
+  "engines": {
+    "node": "12.16.1"
+  },
   "main": "main.js",
   "scripts": {
     "start": "cross-env NODE_ENV=production node main.js",
