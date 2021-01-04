@@ -12,6 +12,8 @@ connectDB();
 const users = require('./routes/api/users');
 // const carts = require('./routes/api/carts');
 const products = require('./routes/api/products');
+const sellers = require('./routes/api/sellers');
+const stores = require('./routes/api/stores');
 
 const app = express();
 
@@ -27,5 +29,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use('/api/users', users);
 // app.use('/api/carts', carts);
 app.use('/api/products', products);
+app.use('/api/sellers', sellers);
+app.use('/api/stores', stores);
 
 app.listen(process.env.PORT, () => console.log(`Server is running on port ${process.env.PORT}`));
