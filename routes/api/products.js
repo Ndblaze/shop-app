@@ -5,7 +5,7 @@ const router = express.Router();
 
 const Product = require('../../models/Product');
 
-const validateAddProduct = require('../../utils/validation/addProduct');
+const validateAddProduct = require('../../utils/validation/product/addProduct');
 
 // Create product item
 router.post('/', passport.authenticate('jwt-user', { session: false }), async (req, res) => {
