@@ -11,6 +11,7 @@ const PORT = process.env.PORT || 5000;
 // const publicPath
 
 import { AppRouter } from './AppRouter';
+import { connectDB } from './config/db';
 
 // Load environment variables via config.env if in development mode
 
@@ -19,6 +20,7 @@ if (process.env.NODE_ENV !== 'production') {
 }
 
 // Connect database
+connectDB();
 
 const app: Application = express();
 
